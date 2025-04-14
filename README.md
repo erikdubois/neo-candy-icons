@@ -1,8 +1,8 @@
 # A Neo candy Icon Theme
 
-![filemanager](https://github.com/erikdubois/neo-candy-icons/blob/master/sample/filemanager.png)
+![filemanager](https://github.com/erikdubois/neo-candy-icons/blob/main/sample/filemanager.png)
 
-![menu](https://github.com/erikdubois/neo-candy-icons/blob/master/sample/menu.png)
+![menu](https://github.com/erikdubois/neo-candy-icons/blob/main/sample/menu.png)
 
 ## Table of Contents
 
