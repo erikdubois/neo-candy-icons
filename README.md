@@ -34,10 +34,11 @@ A Candy Beauty Icon Theme is a vibrant and visually appealing icon theme designe
 
 Add this to your pacman.conf
 
+```
 [nemesis_repo]
 SigLevel = PackageRequired DatabaseNever
 Server = https://erikdubois.github.io/$repo/$arch
-
+```
 For users who prefer an automated installation process, you can use then pacman:
 
 1. **Use pacman:**
