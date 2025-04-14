@@ -3,14 +3,6 @@
 ##################################################################################################################
 # Author    : Erik Dubois
 # Website   : https://www.erikdubois.be
-# Website   : https://www.alci.online
-# Website   : https://www.ariser.eu
-# Website   : https://www.arcolinux.info
-# Website   : https://www.arcolinux.com
-# Website   : https://www.arcolinuxd.com
-# Website   : https://www.arcolinuxb.com
-# Website   : https://www.arcolinuxiso.com
-# Website   : https://www.arcolinuxforum.com
 ##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
@@ -28,14 +20,7 @@
 ##################################################################################################################
 
 # reset - commit your changes or stash them before you merge
-# git reset --hard - ArcoLinux alias - grh
-
-# reset - go back one commit - all is lost
-# git reset --hard HEAD~1
-
-# remove a file online but keep it locally
-# https://www.baeldung.com/ops/git-remove-file-without-deleting-it
-# git rm --cached file.txt
+# git reset --hard - personal alias - grh
 
 # checking if I have the latest files from github
 echo "Checking for newer files online first"
@@ -67,13 +52,6 @@ if grep -q master .git/config; then
 		git push -u origin master
 fi
 
-# force the matter
-# git push -u origin master --force
-
-echo
-tput setaf 6
-echo "######################################################"
-echo "###################  $(basename $0) done"
-echo "######################################################"
-tput sgr0
-echo
+echo "################################################################"
+echo "###################    Git Push Done      ######################"
+echo "################################################################"
