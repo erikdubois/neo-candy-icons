@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   fill="none"
+   version="1.1"
+   id="svg25"
+   sodipodi:docname="start-here.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview27"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="3.2460938"
+     inkscape:cx="128.15403"
+     inkscape:cy="128.15403"
+     inkscape:window-width="948"
+     inkscape:window-height="1008"
+     inkscape:window-x="2884"
+     inkscape:window-y="34"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg25" />
+  <path
+     d="M128 240C189.856 240 240 189.856 240 128C240 66.1441 189.856 16 128 16C66.1441 16 16 66.1441 16 128C16 189.856 66.1441 240 128 240Z"
+     stroke="url(#paint0_linear)"
+     stroke-width="28"
+     id="path2" />
+  <path
+     d="M128 186C160.033 186 186 160.033 186 128C186 95.9675 160.033 70 128 70C95.9675 70 70 95.9675 70 128C70 160.033 95.9675 186 128 186Z"
+     stroke="url(#paint1_linear)"
+     stroke-width="24"
+     id="path4" />
+  <defs
+     id="defs23">
+    <linearGradient
+       id="paint0_linear"
+       x1="128"
+       y1="240"
+       x2="128"
+       y2="16"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#A93AFF"
+         id="stop8" />
+      <stop
+         offset="1"
+         stop-color="#FF81FF"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="paint1_linear"
+       x1="128"
+       y1="186"
+       x2="128"
+       y2="70"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#A93AFF"
+         id="stop13" />
+      <stop
+         offset="1"
+         stop-color="#FF81FF"
+         id="stop15" />
+    </linearGradient>
+    <linearGradient
+       id="paint2_linear"
+       x1="128.47"
+       y1="228"
+       x2="128.47"
+       y2="28"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#FD5900"
+         id="stop18" />
+      <stop
+         offset="1"
+         stop-color="#FFDE00"
+         id="stop20" />
+    </linearGradient>
+  </defs>
+</svg>

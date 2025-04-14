@@ -1,0 +1,54 @@
+#!/bin/bash
+
+path="/home/erik/ARCO/ARCOLINUX/a-candy-beauty-icon-theme-dev/usr/share/icons/al-beautyline"
+echo "Using this path :" $path
+
+echo "run this after a copy/paste and skip"
+rm $path/devices/scalable/network-wired.svg
+rm $path/devices/scalable/network-wired-unavailable.svg
+rm $path/devices/scalable/network-rj11-female.svg
+rm $path/devices/scalable/network-rj45-female.svg
+rm $path/devices/scalable/nm-device-wired.svg
+rm $path/devices/scalable/nm-device-wireless.svg
+rm $path/devices/scalable/nm-signal*
+rm $path/devices/scalable/nm-nm-signal*
+rm $path/apps/scalable/nm-device-wireless.svg
+rm $path/actions/scalable/clipman.svg
+rm $path/actions/scalable/audio-output*
+rm $path/actions/scalable/audio-volume*
+
+
+rm $path/apps/scalable/istanbul\ \(1\).svg
+rm $path/apps/scalable/J7Z\ \(1\).svg
+rm $path/apps/scalable/jack_mixer\ \(1\).svg
+rm $path/apps/scalable/java-10-openjdk\ \(1\).svg
+rm $path/apps/scalable/java10-openjdk\ \(1\).svg
+rm $path/apps/scalable/java-11-openjdk\ \(1\).svg
+rm $path/apps/scalable/java11-openjdk\ \(1\).svg
+rm $path/apps/scalable/java-12-openjdk\ \(1\).svg
+rm $path/apps/scalable/java12-openjdk\ \(1\).svg
+rm $path/apps/scalable/java-13-openjdk\ \(1\).svg
+rm $path/apps/scalable/java13-openjdk\ \(1\).svg
+rm $path/apps/scalable/java-14-openjdk\ \(1\).svg
+rm $path/apps/scalable/java14-openjdk\ \(1\).svg
+rm $path/apps/scalable/java15-openjdk\ \(1\).svg
+rm $path/apps/scalable/java-1.6.0\ \(1\).svg
+rm $path/apps/scalable/java16-openjdk\ \(1\).svg
+rm $path/apps/scalable/java-1.7.0\ \(1\).svg
+rm $path/apps/scalable/java17-openjdk\ \(1\).svg
+rm $path/apps/scalable/java-1.8.0\ \(1\).svg
+rm $path/apps/scalable/java-1.8.0-openjdk\ \(1\).svg
+rm $path/apps/scalable/java\ \(1\).svg
+rm $path/apps/scalable/java9-openjdk\ \(1\).svg
+rm $path/apps/scalable/javaws\ \(1\).svg
+rm $path/apps/scalable/jitsi-meet\ \(1\).svg
+rm $path/apps/scalable/jitsi-meet-desktop\ \(1\).svg
+rm $path/apps/scalable/jockey-gtk\ \(1\).svg
+rm $path/apps/scalable/jockey-kde\ \(1\).svg
+rm $path/apps/scalable/Joplin\ \(1\).svg
+rm $path/apps/scalable/joplin-desktop\ \(1\).svg
+rm $path/apps/scalable/josm\ \(1\).svg
+rm $path/apps/scalable/josm-latest\ \(1\).svg
+rm $path/apps/scalable/journal\ \(1\).svg
+rm $path/apps/scalable/jstest-gtk\ \(1\).svg
+rm $path/apps/scalable/juffed\ \(1\).svg

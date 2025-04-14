@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Gravit.io -->
+<svg width="48pt" height="48pt" style="isolation:isolate" version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient4402" x1="3.5539" x2="46.126" y1="24.158" y2="24.158" gradientUnits="userSpaceOnUse" spreadMethod="repeat">
+   <stop stop-color="#fc0" offset="0"/>
+   <stop stop-color="#ff4d00" offset=".5"/>
+   <stop stop-color="#ff7300" stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path d="m3.5541 44.586c0-0.14065 20.401-38.949 21.085-40.109l0.47248-0.80162 0.51604 0.90548c0.28383 0.498 2.3638 4.4573 4.6222 8.7985s6.8124 13.069 10.12 19.396c4.6413 8.8776 5.9499 11.543 5.7335 11.681-0.15422 0.09772-2.0128 0.17912-4.1302 0.18088l-3.8498 0.0032-1.1353-1.1512c-2.8483-2.8882-7.8267-5.5067-13.39-7.0429l-2.4925-0.68824 3.1157-0.15628c2.9269-0.1468 6.2287-0.04783 8.0339 0.24084 0.60338 0.09649 0.79379 0.05695 0.79379-0.1648 0-0.54786-7.6376-14.509-7.9373-14.509-0.21844 0-1.7603 2.6876-7.7456 13.501-2.9403 5.3122-5.402 9.9663-5.4218 9.9903-0.0886 0.10752-8.3903 0.03151-8.3903-0.07378z" fill="url(#linearGradient4402)" stroke-width=".20771"/>
+</svg>

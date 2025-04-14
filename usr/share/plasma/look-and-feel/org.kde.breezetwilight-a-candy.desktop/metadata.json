@@ -1,0 +1,22 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "erik.dubois@gmail.com",
+                "Name": "KDE Visual Design Group"
+            }
+        ],
+        "Category": "",
+        "Description": "Candy Plasma Twilight",
+        "Id": "org.kde.breezetwilight-a-candy.desktop",
+        "License": "GPLv2+",
+        "Name": "Candy Plasma Twilight",
+        "ServiceTypes": [
+            "Plasma/LookAndFeel"
+        ],
+        "Version": "2.0",
+        "Website": "https://www.kde.org"
+    },
+    "X-KDE-ParentApp": "",
+    "X-Plasma-MainScript": "defaults"
+}
