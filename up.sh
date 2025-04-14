@@ -28,7 +28,14 @@
 ##################################################################################################################
 
 # reset - commit your changes or stash them before you merge
-# git reset --hard - personal alias - grh
+# git reset --hard - ArcoLinux alias - grh
+
+# reset - go back one commit - all is lost
+# git reset --hard HEAD~1
+
+# remove a file online but keep it locally
+# https://www.baeldung.com/ops/git-remove-file-without-deleting-it
+# git rm --cached file.txt
 
 # checking if I have the latest files from github
 echo "Checking for newer files online first"
@@ -60,6 +67,13 @@ if grep -q master .git/config; then
 		git push -u origin master
 fi
 
-echo "################################################################"
-echo "###################    Git Push Done      ######################"
-echo "################################################################"
+# force the matter
+# git push -u origin master --force
+
+echo
+tput setaf 6
+echo "######################################################"
+echo "###################  $(basename $0) done"
+echo "######################################################"
+tput sgr0
+echo
