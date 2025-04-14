@@ -7,10 +7,10 @@
             }
         ],
         "Category": "",
-        "Description": "Candy Plasma Twilight",
-        "Id": "org.kde.breezetwilight-a-candy.desktop",
+        "Description": "Neo candy Plasma Twilight",
+        "Id": "org.kde.breezetwilight-neo-candy.desktop",
         "License": "GPLv2+",
-        "Name": "Candy Plasma Twilight",
+        "Name": "Neo Candy Plasma Twilight",
         "ServiceTypes": [
             "Plasma/LookAndFeel"
         ],

@@ -7,10 +7,10 @@
             }
         ],
         "Category": "",
-        "Description": "Candy Plasma Dark",
-        "Id": "org.kde.breezedark-a-candy.desktop",
+        "Description": "Neo candy Plasma Dark icons",
+        "Id": "org.kde.breezedark-neo-candy.desktop",
         "License": "GPLv2+",
-        "Name": "Candy Plasma Dark",
+        "Name": "Neo Candy Plasma Dark",
         "ServiceTypes": [
             "Plasma/LookAndFeel"
         ],
