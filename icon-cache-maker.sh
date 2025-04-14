@@ -8,8 +8,8 @@
 ### if you have changed the icons - deleted folders etcetera then run this script
 gtk-update-icon-cache -f usr/share/icons/al-beautyline
 gtk-update-icon-cache -f usr/share/icons/al-candy-icons
-gtk-update-icon-cache -f usr/share/icons/a-candy-beauty-icon-theme
+gtk-update-icon-cache -f usr/share/icons/neo-candy-icons
 
 rm -v usr/share/icons/al-beautyline/icon-theme.cache
 rm -v usr/share/icons/al-candy-icons/icon-theme.cache
-rm -v usr/share/icons/a-candy-beauty-icon-theme/icon-theme.cache
+rm -v usr/share/icons/neo-candy-icons/icon-theme.cache
