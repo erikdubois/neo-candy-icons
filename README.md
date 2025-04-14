@@ -54,11 +54,11 @@ For users who prefer manual installation, follow these steps:
 2. **Extract the downloaded archive** to your icon directory:
     When on ArcoLinux...
     ```bash
-    ex a-candy-beauty-icon-theme.tar.gz
+    ex neo-candy-icons-25.04-01.tar.gz
     ```
     or
     ```bash
-    unzip a-candy-beauty-icon-theme.tar.gz
+    unzip neo-candy-icons-25.04-01.tar.gz
     ```
     Move the 3 folders of /usr/share/icons to your ~/.icons folder (create the .icons folder if it does not exist).
     When on Plasma move the 3 folders to ~/.local/share/icons (create the icons folder if it does not exist )
@@ -66,25 +66,25 @@ For users who prefer manual installation, follow these steps:
 
 ## Usage
 
-After installation, you can activate the A Candy Beauty Icon Theme through your desktop environment's appearance settings. The exact steps may vary depending on the desktop environment you are using (GNOME, KDE, XFCE, etc.).
+After installation, you can activate the Neo Candy Icon Theme through your desktop environment's appearance settings. The exact steps may vary depending on the desktop environment you are using (GNOME, KDE, XFCE, etc.).
 
 ### GNOME
 
 1. Open **GNOME Tweaks**.
 2. Go to the **Appearance** section.
-3. Under the **Icons** dropdown, select **A Candy Beauty Icon Theme**.
+3. Under the **Icons** dropdown, select **A Neo Candy Icon Theme**.
 
 ### KDE
 
 1. Open **System Settings**.
 2. Navigate to **Appearance** > **Icons**.
-3. Select **A Candy Beauty Icon Theme** from the list.
+3. Select **A Neo Candy Icon Theme** from the list.
 
 ### XFCE
 
 1. Open **Settings Manager**.
 2. Go to **Appearance** > **Icons**.
-3. Choose **A Candy Beauty Icon Theme** from the list.
+3. Choose **A Neo Candy Icon Theme** from the list.
 
 ### TWMs
 
