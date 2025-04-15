@@ -126,3 +126,12 @@ This project is licensed under the License file of the different projects it is 
 - Beautyline - https://www.opendesktop.org/p/1425426/
 - Candy - https://www.pling.com/p/1305251/
 - Garuda Beautyline - https://gitlab.com/garuda-linux/themes-and-settings/artwork/beautyline
+
+# Websites
+
+Information : https://erikdubois.be
+
+
+# Social Media
+
+Youtube  : https://www.youtube.com/erikdubois
