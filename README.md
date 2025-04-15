@@ -19,7 +19,7 @@
 
 ## Overview
 
-A Candy Beauty Icon Theme is a vibrant and visually appealing icon theme designed to enhance the aesthetic experience of your desktop environment. This theme is meticulously crafted to ensure consistency and beauty across all icons, making your system look cohesive and elegant.
+Neo Candy Icon Theme is a vibrant and visually appealing icon theme designed to enhance the aesthetic experience of your desktop environment. This theme is meticulously crafted to ensure consistency and beauty across all icons, making your system look cohesive and elegant.
 
 ## Features
 
@@ -72,19 +72,19 @@ After installation, you can activate the Neo Candy Icon Theme through your deskt
 
 1. Open **GNOME Tweaks**.
 2. Go to the **Appearance** section.
-3. Under the **Icons** dropdown, select **A Neo Candy Icon Theme**.
+3. Under the **Icons** dropdown, select **Neo Candy Icon Theme**.
 
 ### KDE
 
 1. Open **System Settings**.
 2. Navigate to **Appearance** > **Icons**.
-3. Select **A Neo Candy Icon Theme** from the list.
+3. Select **Neo Candy Icon Theme** from the list.
 
 ### XFCE
 
 1. Open **Settings Manager**.
 2. Go to **Appearance** > **Icons**.
-3. Choose **A Neo Candy Icon Theme** from the list.
+3. Choose **Neo Candy Icon Theme** from the list.
 
 ### TWMs
 
