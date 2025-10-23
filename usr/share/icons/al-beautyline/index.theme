@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=al-beautyLine
 Comment=Beautyline icons restyled
-Inherits=al-candy-icons
+Inherits=al-candy-icons,candy-icons
 Hidden=true
 
 # Directory list
