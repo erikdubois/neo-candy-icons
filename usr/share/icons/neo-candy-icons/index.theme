@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=neo-candy-icons
 Comment=Beautyline icons + Candy icons
-Inherits=al-beautyline,BeautyLine
+Inherits=al-beautyline,or-beautyline,BeautyLine,al-candy-icons,or-candy-icons,candyicons
 
 
 # Directory list
