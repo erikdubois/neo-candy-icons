@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="kiro.jpg" alt="Kiro" width="220" />
+</p>
+
 # A Neo candy Icon Theme
 
 ![filemanager](https://github.com/erikdubois/neo-candy-icons/blob/main/sample/filemanager.png)
