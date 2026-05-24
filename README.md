@@ -119,6 +119,21 @@ We welcome contributions from the community! Whether you want to suggest new ico
 
 If you encounter any issues or have suggestions, please open an issue on the [GitHub Issues](https://github.com/erikdubois/neo-candy-icons/issues) page.
 
+<!-- KIRO-FUNDING-FOOTER:START — managed by Kiro-HQ/cascade-readme-footer.sh -->
+## Help fund Kiro
+
+Everything I build here stays free and open — always. If Kiro or any of these
+tools have ever saved you time or taught you something, a small monthly
+contribution helps keep the work going. Donations target break-even, nothing
+more — the core always stays free for everyone.
+
+- GitHub Sponsors: https://github.com/sponsors/erikdubois
+- Patreon: https://www.patreon.com/c/kiroproject
+- YouTube memberships: https://www.youtube.com/@ErikDubois/join
+- Ko-fi: https://ko-fi.com/erikdubois
+- PayPal: https://www.paypal.me/erikdubois
+<!-- KIRO-FUNDING-FOOTER:END -->
+
 ## License
 
 This project is licensed under the License file of the different projects it is based on. See the LICENSE file in the different folders for more details.
