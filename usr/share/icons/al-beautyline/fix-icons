@@ -1,6 +1,7 @@
 #!/bin/bash
 
-path="/home/erik/ARCO/ARCOLINUX/a-candy-beauty-icon-theme-dev/usr/share/icons/al-beautyline"
+# resolve to this script's own dir, so it works from any checkout
+path="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
 echo "Using this path :" $path
 
 echo "run this after a copy/paste and skip"
