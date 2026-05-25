@@ -3,7 +3,7 @@
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
-# Website 	: 	http://www.erikdubois.be
+# Website 	: 	https://kiroproject.be
 ##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
