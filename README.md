@@ -64,9 +64,9 @@ For users who prefer manual installation, follow these steps:
     ```bash
     unzip neo-candy-icons-25.04-01.tar.gz
     ```
-    Move the 3 folders of /usr/share/icons to your ~/.icons folder (create the .icons folder if it does not exist).
-    When on Plasma move the 3 folders to ~/.local/share/icons (create the icons folder if it does not exist )
-4. **Set the icon theme** using your desktop environment’s settings manager.
+    Move the 5 folders of /usr/share/icons (al-beautyline, or-beautyline, al-candy-icons, or-candy-icons and neo-candy-icons) to your ~/.icons folder (create the .icons folder if it does not exist).
+    When on Plasma move the 5 folders to ~/.local/share/icons (create the icons folder if it does not exist )
+3. **Set the icon theme** using your desktop environment’s settings manager.
 
 ## Usage
 
