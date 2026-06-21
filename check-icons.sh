@@ -318,6 +318,16 @@ main() {
     local theme_dirs dir name
     theme_dirs="$(find "${ROOT}" -name .git -prune -o -type f -name 'index.theme' -printf '%h\n' 2>/dev/null | sort -u)"
 
+    # Skip themes under git-ignored paths — build scaffolding (e.g. a _src/
+    # source snapshot) is never shipped, so it should not be validated.
+    if git -C "${ROOT}" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        theme_dirs="$(while IFS= read -r dir; do
+            [[ -z "${dir}" ]] && continue
+            git -C "${ROOT}" check-ignore -q "${dir}" && continue
+            echo "${dir}"
+        done <<< "${theme_dirs}")"
+    fi
+
     if [[ -z "${theme_dirs}" ]]; then
         log_error "No index.theme found anywhere under ${ROOT} — not an icon-theme repo?"
         exit 1

@@ -28,6 +28,8 @@ Checks performed (ERROR blocks the push, WARN is reported):
 - hidden files/dirs and editor/OS junk (WARN); non-world-readable perms (WARN)
 - index.theme/disk directory mismatches, both directions (WARN — gtk tolerates
   over-declaration, verified on surfn-plasma-flow, so it must not block)
+- Skips themes under git-ignored paths (e.g. a `_src/` build snapshot) so
+  scaffolding that never ships is not validated as if it were a theme.
 
 ### Technical Details
 
@@ -35,10 +37,14 @@ Checks performed (ERROR blocks the push, WARN is reported):
   next to the theme, so the validator runs it against a throwaway `cp -a` copy
   in `mktemp -d` with `--index-only --force`, reads the exit status, and deletes
   the temp dir — the source tree is never touched.
-- Broken-symlink detection only fails on **relative** targets (genuinely broken
-  in the package); **absolute** `/usr/share/...` targets that resolve only after
-  install are reported as WARN to avoid false positives that would wrongly block
-  the build.
+- Broken-symlink detection only fails (ERROR) when the resolved target stays
+  **inside the theme's own directory** and is missing — genuinely broken in the
+  package and safe to remove. Symlinks whose target **escapes the theme** (via
+  `../` into a sibling theme, or an absolute `/usr/share/icons/...` path) are
+  WARN only: icon themes legitimately link across packages (meta-theme pattern,
+  e.g. neo-candy into al-beautyline) and those resolve only once everything is
+  installed together. This prevents the validator from ever flagging — or
+  recommending deletion of — a working cross-theme link.
 - Script intentionally uses `set -uo pipefail` (not `-e`): it accumulates all
   findings and returns its own exit code, rather than aborting on the first
   non-matching `find`/`grep`.
