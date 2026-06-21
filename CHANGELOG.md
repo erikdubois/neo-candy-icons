@@ -5,10 +5,17 @@
 ### What Changed
 
 Added [check-icons.sh](./check-icons.sh), a pre-publish validator for every
-theme in `usr/share/icons/`, and wired it into [up.sh](./up.sh) so a broken
-theme can never be pushed. It consolidates and broadens every risk the older
-ad-hoc helpers (`fix-icon-cache.sh`, `icons-checker.sh`, `*cache*.sh`) checked
-for, so users never hit an error or a wall of missing icons on install.
+icon theme in a repo, and wired it into [up.sh](./up.sh) so a broken theme can
+never be pushed. It consolidates and broadens every risk the older ad-hoc
+helpers (`fix-icon-cache.sh`, `icons-checker.sh`, `*cache*.sh`) checked for, so
+users never hit an error or a wall of missing icons on install.
+
+Layout-agnostic and reusable across every icon-theme repo (the whole surfn
+family): it locates themes by finding `index.theme` anywhere under the repo,
+so it works whether themes live in `usr/share/icons/`, `icons/`, `surfn-icons/`
+or the repo root. Run it in place, or against any repo: `./check-icons.sh /path`.
+Smoke-tested across 30 surfn/neo repos — 23 clean, 7 correctly flagged for
+genuine relative broken symlinks and stale committed `icon-theme.cache` files.
 
 Checks performed (ERROR blocks the push, WARN is reported):
 - index.theme present, has `[Icon Theme]` + `Name=`, Unix line endings (ERROR)
@@ -19,6 +26,8 @@ Checks performed (ERROR blocks the push, WARN is reported):
 - file/dir names containing spaces — the `(copy)`/`(1)` bug (ERROR)
 - a stale `icon-theme.cache` committed into the tree (ERROR)
 - hidden files/dirs and editor/OS junk (WARN); non-world-readable perms (WARN)
+- index.theme/disk directory mismatches, both directions (WARN — gtk tolerates
+  over-declaration, verified on surfn-plasma-flow, so it must not block)
 
 ### Technical Details
 
