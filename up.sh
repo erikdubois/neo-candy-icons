@@ -153,6 +153,14 @@ main() {
         bash "${SCRIPT_DIR}/repo.sh"
     fi
 
+    if [[ -f "${SCRIPT_DIR}/check-icons.sh" ]]; then
+        log_section "Validating icon themes"
+        bash "${SCRIPT_DIR}/check-icons.sh" || {
+            log_error "Icon validation failed — fix the errors above before publishing"
+            exit 1
+        }
+    fi
+
     git_commit_and_push
 
     log_success "$(basename "$0") done"

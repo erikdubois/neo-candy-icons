@@ -1,5 +1,46 @@
 # Changelog
 
+## 2026.06.21 — Add check-icons.sh pre-publish validator
+
+### What Changed
+
+Added [check-icons.sh](./check-icons.sh), a pre-publish validator for every
+theme in `usr/share/icons/`, and wired it into [up.sh](./up.sh) so a broken
+theme can never be pushed. It consolidates and broadens every risk the older
+ad-hoc helpers (`fix-icon-cache.sh`, `icons-checker.sh`, `*cache*.sh`) checked
+for, so users never hit an error or a wall of missing icons on install.
+
+Checks performed (ERROR blocks the push, WARN is reported):
+- index.theme present, has `[Icon Theme]` + `Name=`, Unix line endings (ERROR)
+- every `Directories=`/`ScaledDirectories=` path exists on disk (ERROR); real
+  context folders not declared in index.theme (WARN)
+- `gtk-update-icon-cache` builds cleanly per theme (ERROR)
+- relative broken symlinks (ERROR); unresolved absolute symlinks (WARN)
+- file/dir names containing spaces — the `(copy)`/`(1)` bug (ERROR)
+- a stale `icon-theme.cache` committed into the tree (ERROR)
+- hidden files/dirs and editor/OS junk (WARN); non-world-readable perms (WARN)
+
+### Technical Details
+
+- `gtk-update-icon-cache` has no dry-run mode and writes `icon-theme.cache`
+  next to the theme, so the validator runs it against a throwaway `cp -a` copy
+  in `mktemp -d` with `--index-only --force`, reads the exit status, and deletes
+  the temp dir — the source tree is never touched.
+- Broken-symlink detection only fails on **relative** targets (genuinely broken
+  in the package); **absolute** `/usr/share/...` targets that resolve only after
+  install are reported as WARN to avoid false positives that would wrongly block
+  the build.
+- Script intentionally uses `set -uo pipefail` (not `-e`): it accumulates all
+  findings and returns its own exit code, rather than aborting on the first
+  non-matching `find`/`grep`.
+- Follows the canonical Kiro script template (header, colors, log_* helpers,
+  on_error trap, main).
+
+### Files Modified
+
+- `check-icons.sh` (new)
+- `up.sh` — runs `check-icons.sh` before commit/push; aborts on validation error
+
 ## 2026.06.20 — README: correct folder count for manual install
 
 ### What Changed
