@@ -47,7 +47,11 @@ For users who prefer an automated installation process, you can use then pacman:
 
 1. **Use pacman:**
     ```bash
-    sudo pacman -S neo-candy-icons
+    # Everything — the whole Neo Candy collection (base + all variants)
+    sudo pacman -S neo-candy-icons-meta
+
+    # Just the base Neo Candy icon set
+    sudo pacman -S neo-candy-icons-git
     ```
 
 ### Manual Installation
