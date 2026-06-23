@@ -46,8 +46,15 @@ Server = https://erikdubois.github.io/$repo/$arch
 For users who prefer an automated installation process, you can use then pacman:
 
 1. **Use pacman:**
+    
+    *For Neo Candy — meta package:*
     ```bash
-    sudo pacman -S neo-candy-icons
+    sudo pacman -S neo-candy-icons-meta
+    ```
+
+    *For Neo candy Git version:*
+    ```bash
+    sudo pacman -S neo-candy-icons-git
     ```
 
 ### Manual Installation
