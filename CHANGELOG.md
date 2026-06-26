@@ -1,5 +1,27 @@
 # Changelog
 
+## 2026.06.26 — Candy-style Shelly icon
+
+### What Changed
+
+Replaced the imported Shelly brand "S" logo (`shelly.svg` and `shelly-tray.svg`)
+with a hand-drawn **candy-style venus/scallop shell** that matches the rest of
+the theme — rounded outline glyph, candy gradient, 48-unit canvas. The previous
+brand logo was an Inkscape 24×24 import that clashed with the line-icon look.
+
+### Technical Details
+
+- Single stroked `<path>` (silhouette + 5 radiating ribs from the hinge),
+  `stroke-width="4"`, round caps/joins — matches the dominant outline style.
+- 3-stop linear gradient violet `rgb(124,0,255)` → magenta `rgb(245,32,250)`
+  → warm orange `rgb(255,150,40)`, run top-to-bottom for clear contrast.
+- `viewBox="0 0 48 48"`, output size set to `width="64" height="64"`.
+
+### Files Modified
+
+- usr/share/icons/al-candy-icons/apps/scalable/shelly.svg
+- usr/share/icons/al-candy-icons/apps/scalable/shelly-tray.svg
+
 ## 2026.06.23 — README install commands
 
 ### What Changed
