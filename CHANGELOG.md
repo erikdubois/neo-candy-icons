@@ -1,5 +1,28 @@
 # Changelog
 
+## 2026.06.27 — Surfn house as base home icon
+
+### What Changed
+
+Replaced every non-symbolic **home** alias in the shared base `places` set with
+Surfn's solid house glyph (`go-home.svg`). `neo-candy-icons/places` is a symlink
+to `al-beautyline/places`, so this single change re-skins the home icon for every
+neo-candy variant that inherits the base (papirus-*, etc.). Variants that ship
+their own home icon (tela, numix, vertexed, vimix) are unaffected — by design,
+since the coherent ones already match their folder colour.
+
+### Technical Details
+
+- Source: `Surfn/actions/16/go-home.svg` for the `16` dir, `Surfn/actions/scalable/go-home.svg` for the `48` dir (both vector).
+- Aliases overwritten in `al-beautyline/places/16`: default-user-home, folder-home, folder_home, gnome-fs-home, gnome-home, go-home, go-home-large, gohome, gtg-home, gtk-home, home, kfm_home, redhat-home, stock_home, user-home, user-home-open.
+- Aliases overwritten in `al-beautyline/places/48`: folder-home, folder_home, gnome-fs-home, gnome-home, user-home.
+- Left untouched: `*-symbolic` variants (monochrome contexts) and `akonadi-phone-home` (not a home-folder icon). `16@2x`/`16@3x` are symlinks to `16`, so covered automatically.
+
+### Files Modified
+
+- `usr/share/icons/al-beautyline/places/16/*home*.svg` (16 aliases)
+- `usr/share/icons/al-beautyline/places/48/*home*.svg` (5 aliases)
+
 ## 2026.06.26 — Candy-style Shelly icon
 
 ### What Changed
