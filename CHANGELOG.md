@@ -23,6 +23,28 @@ since the coherent ones already match their folder colour.
 - `usr/share/icons/al-beautyline/places/16/*home*.svg` (16 aliases)
 - `usr/share/icons/al-beautyline/places/48/*home*.svg` (5 aliases)
 
+## 2026.06.27 — Surfn recycle bin as base trash icon
+
+### What Changed
+
+Replaced the green line-style trash icons in the shared base `places` set with
+Surfn's grey recycle-bin glyph (`user-trash` / `user-trash-full`), so every
+neo-candy variant inheriting the base shows it. The trash is deliberately allowed
+to stand out from the theme's folder colour — it should be quick to spot.
+
+### Technical Details
+
+- Source: Surfn `places/16/user-trash.png` + `user-trash-full.png` for the `16` dir, `places/48/...` for the `48` dir. PNG (not the Surfn SVG, which was rejected). Both base dirs are `Type=Scalable`, so 16px is pixel-crisp in the sidebar (the only place Trash renders) and 48 covers larger sizes.
+- Empty-state aliases ← `user-trash.png`: edittrash, emptytrash, gnome-dev-trash-empty, gnome-fs-trash-empty(-accept), gnome-stock-trash(-empty), stock_trash_empty, trashcan_empty, trash-empty, user-trash, xfce-trash_empty.
+- Full-state aliases ← `user-trash-full.png`: gnome-dev-trash-full, gnome-fs-trash-full, gnome-stock-trash-full, stock_trash_full, trashcan_full(-new), trash-full, user-trash-full, xfce-trash_full.
+- Old `.svg` raster aliases deleted (PNG wins the lookup). The `*-symbolic` entries were symlinks to those deleted SVGs, so they were repointed to the PNGs as `.png` symlinks (and the 48px full-symbolic, which had pointed at the *empty* icon, was fixed to point at full).
+- Removed a stray `places/48/.ruff_cache/` dir that should not ship.
+
+### Files Modified
+
+- `usr/share/icons/al-beautyline/places/16/*trash*` (svg → png, both states)
+- `usr/share/icons/al-beautyline/places/48/*trash*` (svg → png, both states)
+
 ## 2026.06.26 — Candy-style Shelly icon
 
 ### What Changed
