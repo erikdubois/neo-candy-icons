@@ -14,8 +14,8 @@ folder set from that same commit is untouched.
 
 - Restored the pre-`9fcc3b8` trash `.svg` family (real files + symlink aliases) in `al-beautyline/places/{16,48}` via `git checkout 9fcc3b8^ -- …`, and `git rm`'d the grey `*trash*.png` set that had replaced them so the SVG wins the lookup cleanly (no same-dir PNG/SVG precedence ambiguity).
 - Gradients: empty `#00B59C → #9CFFAC` (green), full `#FD3A84 → #FFA68D` (red/pink). `neo-candy-icons/places` is a symlink to `al-beautyline/places`, so every inheriting variant gets the colourful trash again.
-- Pre-existing quirk restored faithfully: the red *full* real glyph exists only at 16px; 48px full-state aliases flatten to the green base. The sidebar renders at 16px, so the visible icon is red-full-capable.
-- 33 SVGs restored, 47 PNGs removed. `check-icons.sh` passes clean on all five themes.
+- Added a real red *full* glyph at 48px too (`48/user-trash-full.svg`, copied from the scalable 16px source) plus the full-state aliases mirroring 48px's empty set (`trash-full`, `gnome-fs-trash-full`, `gnome-stock-trash-full`, `trashcan_full`, `xfce-trash_full`). Also fixed `48/user-trash-full-symbolic.svg`, which had pointed at the green *empty* icon, to point at the red full glyph. So full-trash is red at every size, not just 16px.
+- 33 SVGs restored, 47 PNGs removed, +6 SVGs at 48px for the full state. `check-icons.sh` passes clean on all five themes.
 
 ### Files Modified
 
