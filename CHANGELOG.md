@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026.10.01 — Shell-script and empty-file icons match the theme
+
+### What Changed
+
+Two neo-candy file-manager icons looked out of place. Shell scripts such as `~/.fehbg` showed Breeze's grey `>_` page, and empty files such as `~/.ICEauthority` showed a flat grey outline. Both now use the neo-candy gradient style. Also removed a stray mis-named symlink.
+
+### Technical Details
+
+- Qt file managers look up the exact icon name (`text-x-shellscript`) across the whole inherit chain before trying the generic `text-x-script`. al-beautyline had no `text-x-shellscript`, so breeze-dark won. Added `text-x-shellscript.svg` and `text-x-sh.svg` as symlinks to `text-x-script.svg`, the pink `>_` page.
+- `application-x-zerosize.svg` was the only flat-grey page. It is now the blue gradient page outline (`#5570FF → #4DD3FF`) taken from `text-x-generic.svg`, without the text lines. `unknown.svg` and `inode-vnd.kde.service.unknown.svg` symlink to it and pick up the change.
+- Removed `text-x-generic.svapplication-x-awk.svg`, a typo duplicate of the existing `application-x-awk.svg`.
+- `neo-candy-icons/mimetypes` is a symlink to `al-beautyline/mimetypes`, so neo-candy gets all of this.
+
+### Files Modified
+
+- usr/share/icons/al-beautyline/mimetypes/scalable/application-x-zerosize.svg
+- usr/share/icons/al-beautyline/mimetypes/scalable/text-x-shellscript.svg (new symlink)
+- usr/share/icons/al-beautyline/mimetypes/scalable/text-x-sh.svg (new symlink)
+- usr/share/icons/al-beautyline/mimetypes/scalable/text-x-generic.svapplication-x-awk.svg (removed)
+
 ## 2026.07.07 — Trash back to colourful candy (green empty / red full)
 
 ### What Changed
