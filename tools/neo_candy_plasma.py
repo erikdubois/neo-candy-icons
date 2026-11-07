@@ -24,10 +24,9 @@ PROTECT = re.compile(r"shutdown|power-?off|reboot|restart|suspend|hibernat|sleep
 
 
 # Tray glyphs Erik wants candy-coloured like their tray neighbours instead of following the colour scheme
-# (2026-11-07, ramp B "Cochiti Lake"). Variety: white in the XFCE tray, candy in the Plasma tray. Both draw ~22 px,
-# so the split goes by name: Plasma's tray asks <name>-symbolic first, XFCE's systray only the plain name.
-CANDY_RULES = [(d, re.compile(r"^audio-volume-")) for d in HOOK_DIRS] + [
-    ("al-beautyline/apps/scalable", re.compile(r"^variety-indicator-symbolic$"))]
+# (2026-11-07, ramp B "Cochiti Lake"): sound. Variety follows the colour scheme in Plasma instead (Erik, later the
+# same day): apps/scalable/variety-indicator-symbolic.svg is a link to the hooked panel/22 glyph.
+CANDY_RULES = [(d, re.compile(r"^audio-volume-")) for d in HOOK_DIRS]
 CANDY_RAMP = ["#0072FF", "#00C6FF"]
 
 
