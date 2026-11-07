@@ -9,7 +9,7 @@
 - Check result today: BeautyLine unchanged (Pling V2.4, last changed 2024-08-09); Candy has 25 new app/preferences icons.
 - `neo-candy-icons` inherited `candyicons`, a theme that does not exist, so the installed Candy theme was never used as a fallback. It now inherits `candy-icons`.
 - Plasma: the white and grey status icons in the tray (network, Bluetooth and the like) now follow the colour scheme. Before, they vanished on a light Plasma panel. XFCE and other GTK desktops show them exactly as before (checked pixel by pixel).
-- Sound tray icons are now candy-coloured (blue to cyan), like their colourful tray neighbours. In XFCE the sound plugin asks for symbolic icons, which GTK always draws flat, so it stays white there.
+- Sound tray icons are now candy-coloured (blue to cyan) in Plasma, like their colourful tray neighbours. In XFCE the sound icon is now neo-candy's own white speaker; before, it was upstream Candy's thin outline speaker.
 - Variety's tray icon is candy-coloured in Plasma and stays white in XFCE, matching each desktop's tray.
 - The Bluetooth tile in XFCE Settings (Blueberry) shows the blue candy Bluetooth icon instead of the flat tray glyph.
 - New candy `insert-link` icon (chain + plus) for Thunar's "Create symlink" action. The old one was a plain white glyph.
@@ -41,7 +41,8 @@
   - Verified: rsvg renders of all hooked icons are pixel-identical before and after at 16, 24 and 48 px.
 - Candy step (runs before the hook, `CANDY_RULES`) applies a diagonal `nc-candy` gradient `#0072FF → #00C6FF` (Cochiti Lake) in place of neutral or theme-hooked paint. Accents stay, and files that already carry `nc-candy` are skipped.
   - `audio-volume-*` in `al-beautyline/status` and `panel`.
-  - `variety-indicator` in `apps/scalable` only. Plasma's 22 px tray takes that copy, because `neo-candy-icons/index.theme` lists no `panel/22`. XFCE's 16 px tray takes the fixed `panel/16` copy, which stays the original white glyph (hooked).
+  - Variety is split by name, not by size. On a 30 px XFCE panel both desktops draw the tray at about 22 px and land on `apps/scalable`. Plasma's tray asks for `<name>-symbolic` first; XFCE's systray asks only for the plain name. So the new `apps/scalable/variety-indicator-symbolic.svg` gets the candy (Plasma), and `variety-indicator.svg` everywhere stays the original white glyph (XFCE).
+- New aliases `audio-volume-{high,medium,low,muted,high-warning,high-danger}-symbolic` in `al-beautyline/status/{16,22}` point to neo-candy's own speaker files. XFCE's sound plugin asks for these names, which before only existed in `or-candy-icons`. GTK flattens `-symbolic` icons to the panel's text colour, so XFCE draws them white; Plasma keeps the candy.
 - `status/22/bluetooth.svg` is now a symlink to `../../apps/scalable/bluetooth.svg`. GTK preferred the mono `status/22` copy at 48 px (closest size), which is why the Settings tile was flat.
 - `actions/scalable/insert-link.svg` is drawn new: one stroked path, viewBox 48, width 4, round caps, gradient `#5570FF → #4DD3FF` like `link` / `edit-copy`. The old white glyph is kept as the real `insert-link-symbolic.svg`, which used to be a link to it. Aliases that point to `insert-link` (`gnumeric-link-add`, `itmages-copy-link`, `document-open-remote`, `rabbitvcs-checkmods`) get the candy one too.
 - Fake-link repair: an `.svg` of at most 200 bytes whose whole content is an existing sibling's file name is replaced by a relative symlink to it (100 in `al-*`, including `kdeconnect-tray-symbolic`).

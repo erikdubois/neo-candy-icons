@@ -24,10 +24,10 @@ PROTECT = re.compile(r"shutdown|power-?off|reboot|restart|suspend|hibernat|sleep
 
 
 # Tray glyphs Erik wants candy-coloured like their tray neighbours instead of following the colour scheme
-# (2026-11-07, ramp B "Cochiti Lake"). Variety only in apps/scalable: Plasma's 22 px tray takes that copy (neo-candy
-# lists no panel/22) while XFCE's 16 px tray takes the fixed panel/16 one, which stays white as Erik wants for XFCE.
+# (2026-11-07, ramp B "Cochiti Lake"). Variety: white in the XFCE tray, candy in the Plasma tray. Both draw ~22 px,
+# so the split goes by name: Plasma's tray asks <name>-symbolic first, XFCE's systray only the plain name.
 CANDY_RULES = [(d, re.compile(r"^audio-volume-")) for d in HOOK_DIRS] + [
-    ("al-beautyline/apps/scalable", re.compile(r"^variety-indicator$"))]
+    ("al-beautyline/apps/scalable", re.compile(r"^variety-indicator-symbolic$"))]
 CANDY_RAMP = ["#0072FF", "#00C6FF"]
 
 
