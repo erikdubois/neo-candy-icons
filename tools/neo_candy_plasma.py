@@ -24,10 +24,11 @@ PROTECT = re.compile(r"shutdown|power-?off|reboot|restart|suspend|hibernat|sleep
 
 
 # Tray glyphs Erik wants candy-coloured like their tray neighbours instead of following the colour scheme
-# (2026-11-07, ramp B "Cochiti Lake"): sound and Variety
-CANDY_NAMES = re.compile(r"^(audio-volume-|variety-indicator)")
+# (2026-11-07, ramp B "Cochiti Lake"). Variety only in apps/scalable: Plasma's 22 px tray takes that copy (neo-candy
+# lists no panel/22) while XFCE's 16 px tray takes the fixed panel/16 one, which stays white as Erik wants for XFCE.
+CANDY_RULES = [(d, re.compile(r"^audio-volume-")) for d in HOOK_DIRS] + [
+    ("al-beautyline/apps/scalable", re.compile(r"^variety-indicator$"))]
 CANDY_RAMP = ["#0072FF", "#00C6FF"]
-CANDY_EXTRA = ["al-beautyline/apps/scalable"]
 
 
 def protected_files(root):
@@ -210,9 +211,9 @@ def main():
 
     counts = {"fake-link": fix_fake_links(args.root, args.dry_run)}
     keep = protected_files(args.root)
-    for d in HOOK_DIRS + CANDY_EXTRA:
+    for d, names in CANDY_RULES:
         for p in sorted((args.root / d).glob("*.svg")):
-            if p.is_symlink() or not CANDY_NAMES.search(p.stem) or p.resolve() in keep:
+            if p.is_symlink() or not names.search(p.stem) or p.resolve() in keep:
                 continue
             svg = p.read_text(errors="ignore")
             if 'id="nc-candy"' in svg:
