@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333333 4.2333333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="snap-​nodes-​midpoint.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="49.293374"
+     inkscape:cx="7.4046463"
+     inkscape:cy="7.65823"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="paint0_linear_451_2933"
+       x1="2.75"
+       y1="10.3125"
+       x2="18.371799"
+       y2="8.5861902"
+       gradientUnits="userSpaceOnUse"
+       inkscape:label="Beautyline_purple_gradient"
+       inkscape:swatch="gradient">
+      <stop
+         stop-color="#8D01A2"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#FF00D2"
+         id="stop2" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect300"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 | F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <linearGradient
+       id="paint0_linear_651_140"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196"
+       gradientUnits="userSpaceOnUse"
+       inkscape:label="Beautyline_yellow_gradient"
+       spreadMethod="pad">
+      <stop
+         stop-color="#FE0844"
+         id="stop4012" />
+      <stop
+         offset="1"
+         stop-color="#FEB302"
+         id="stop4014" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient174"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196"
+       gradientUnits="userSpaceOnUse"
+       inkscape:swatch="gradient"
+       inkscape:label="Beautyline_yellow_gradient">
+      <stop
+         stop-color="#FE0844"
+         id="stop172"
+         style="stop-color:#fe0844;stop-opacity:1" />
+      <stop
+         offset="1"
+         stop-color="#FEB302"
+         id="stop173" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint0_linear_651_140"
+       id="linearGradient128"
+       gradientUnits="userSpaceOnUse"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196"
+       spreadMethod="pad" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect128"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 | F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint0_linear_451_2933"
+       id="linearGradient129"
+       gradientUnits="userSpaceOnUse"
+       x1="2.75"
+       y1="10.3125"
+       x2="18.371799"
+       y2="8.5861902" />
+  </defs>
+  <g
+     id="g1"
+     description="snap-​nodes-​midpoint"
+     transform="matrix(0.24804687,0,0,0.24804687,-0.61184699,-0.61184899)">
+    <path
+       id="path1"
+       class="ColorScheme-Text"
+       d="m 3,11.4 v 0.2 A 0.4,0.4 45 0 0 3.4,12 L 10,12 V 11 H 3.4 A 0.4,0.4 135 0 0 3,11.4 Z M 12,11 v 1 h 6.6 A 0.4,0.4 135 0 0 19,11.6 V 11.4 A 0.4,0.4 45 0 0 18.6,11 Z"
+       fill="currentColor"
+       inkscape:path-effect="#path-effect128"
+       inkscape:original-d="m 3,11 v 1 h 7 v -1 z m 9,0 v 1 h 7 v -1 z"
+       style="color:#fcfcfc;fill:url(#linearGradient128)" />
+    <path
+       id="path2"
+       class="ColorScheme-Accent"
+       d="m 11,8 -3,6 h 6 z M 11,10.236328 12.382812,13 H 9.617188 Z"
+       fill="currentColor"
+       style="color:#3daee9;fill:url(#linearGradient129)" />
+  </g>
+</svg>

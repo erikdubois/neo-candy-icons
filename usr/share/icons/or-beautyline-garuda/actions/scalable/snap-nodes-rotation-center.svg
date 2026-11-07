@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333333 4.2333333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="snap-​nodes-​rotation-​center.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="49.293374"
+     inkscape:cx="7.4046463"
+     inkscape:cy="7.65823"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="paint0_linear_651_140"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196"
+       gradientUnits="userSpaceOnUse"
+       inkscape:label="Beautyline_yellow_gradient"
+       spreadMethod="pad">
+      <stop
+         stop-color="#FE0844"
+         id="stop4012" />
+      <stop
+         offset="1"
+         stop-color="#FEB302"
+         id="stop4014" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint0_linear_651_140"
+       id="linearGradient160"
+       gradientUnits="userSpaceOnUse"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="12.933924"
+       y2="3.2164667" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint3_linear_651_140"
+       id="linearGradient161"
+       gradientUnits="userSpaceOnUse"
+       x1="10.3233"
+       y1="14.7785"
+       x2="11.2419"
+       y2="7.3203001" />
+    <linearGradient
+       id="paint3_linear_651_140"
+       x1="10.3233"
+       y1="14.7785"
+       x2="11.2419"
+       y2="7.3203001"
+       gradientUnits="userSpaceOnUse"
+       inkscape:swatch="gradient">
+      <stop
+         stop-color="#8D01A2"
+         id="stop4027" />
+      <stop
+         offset="1"
+         stop-color="#FF33DB"
+         id="stop4029" />
+    </linearGradient>
+  </defs>
+  <g
+     id="g1"
+     description="snap-​nodes-​rotation-​center"
+     transform="matrix(0.24804687,0,0,0.24804687,-0.36380025,-0.41101773)">
+    <path
+       style="color:#fcfcfc;fill:url(#linearGradient160);fill-opacity:1;stroke:none"
+       d="M 9.3167667,3.3336239 9.1754208,3.4749698 a 0.39999998,0.39999998 89.999999 0 0 0,0.5656854 l 1.8687052,1.8687046 a 0.08284271,0.08284271 112.5 0 1 -0.05858,0.1414214 H 8.9003906 8.4 a 0.4,0.4 135 0 0 -0.4,0.4 v 0.2 a 0.4,0.4 45 0 0 0.4,0.4 h 0.5003906 2.0851564 a 0.08284271,0.08284271 67.500001 0 1 0.05858,0.1414214 L 9.1754208,9.0609073 a 0.39999991,0.39999991 89.999995 0 0 1e-7,0.5656854 l 0.1413457,0.1413456 a 0.40000007,0.40000007 179.99999 0 0 0.5656855,0 L 12.816766,6.8336239 a 0.40000003,0.40000003 90.000001 0 0 0,-0.5656854 L 9.8824521,3.3336239 a 0.39999998,0.39999998 1.6370224e-6 0 0 -0.5656854,0 z M 6.5,6.0507812 c -0.277,0 -0.5,0.223 -0.5,0.5 0,0.2770001 0.223,0.5000002 0.5,0.5 0.277,0 0.5,-0.2229999 0.5,-0.5 0,-0.277 -0.223,-0.4999998 -0.5,-0.5 z m -3,2 c -0.277,0 -0.5,0.2230002 -0.5,0.5 0,0.2770002 0.223,0.5 0.5,0.5 0.277,0 0.5,-0.2229999 0.5,-0.5 0,-0.2769998 -0.223,-0.5 -0.5,-0.5 z m -1,2.9999998 c -0.277,0 -0.5,0.223 -0.5,0.5 0,0.277 0.223,0.5 0.5,0.5 0.277,0 0.5,-0.223 0.5,-0.5 0,-0.277 -0.223,-0.5 -0.5,-0.5 z m 1,3 c -0.277,0 -0.5,0.223 -0.5,0.5 0,0.277 0.223,0.5 0.5,0.5 0.277,0 0.5,-0.223 0.5,-0.5 0,-0.277 -0.223,-0.5 -0.5,-0.5 z m 3,2 c -0.277,0 -0.5,0.223 -0.5,0.5 0,0.277 0.223,0.5 0.5,0.5 0.277,0 0.5,-0.223 0.5,-0.5 0,-0.277 -0.223,-0.5 -0.5,-0.5 z"
+       class="ColorScheme-Text"
+       id="path5"
+       inkscape:path-effect="#path-effect151"
+       sodipodi:nodetypes="ccccccccccccsssssssssssssssssssssssss" />
+    <path
+       style="color:#3daee9;fill:url(#linearGradient161);fill-opacity:1;stroke:none"
+       d="m 14,10 a 4,4 0 0 0 -4,4 4,4 0 0 0 4,4 4,4 0 0 0 4,-4 4,4 0 0 0 -4,-4 z m 0,1 a 3,3 0 0 1 3,3 3,3 0 0 1 -3,3 3,3 0 0 1 -3,-3 3,3 0 0 1 3,-3 z"
+       class="ColorScheme-Accent"
+       id="path2" />
+  </g>
+</svg>

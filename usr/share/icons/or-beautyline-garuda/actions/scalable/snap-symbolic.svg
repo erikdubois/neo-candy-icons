@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333333 4.2333333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="snap.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="53.0625"
+     inkscape:cx="7.9905771"
+     inkscape:cy="8"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient174"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196"
+       gradientUnits="userSpaceOnUse"
+       inkscape:swatch="gradient"
+       inkscape:label="Beautyline_yellow_gradient">
+      <stop
+         stop-color="#FE0844"
+         id="stop172"
+         style="stop-color:#fe0844;stop-opacity:1" />
+      <stop
+         offset="1"
+         stop-color="#FEB302"
+         id="stop173" />
+    </linearGradient>
+    <linearGradient
+       id="paint0_linear_451_2933"
+       x1="2.75"
+       y1="10.3125"
+       x2="18.371799"
+       y2="8.5861902"
+       gradientUnits="userSpaceOnUse"
+       inkscape:label="Beautyline_purple_gradient"
+       inkscape:swatch="gradient">
+      <stop
+         stop-color="#8D01A2"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#FF00D2"
+         id="stop2" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect300"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 | F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient174"
+       id="linearGradient1"
+       gradientUnits="userSpaceOnUse"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint0_linear_451_2933"
+       id="linearGradient2"
+       gradientUnits="userSpaceOnUse"
+       x1="2.75"
+       y1="10.3125"
+       x2="18.371799"
+       y2="8.5861902" />
+  </defs>
+  <g
+     id="g1"
+     description="snap"
+     transform="matrix(0.24804687,0,0,0.24804687,-0.60358061,-0.61184883)">
+    <path
+       id="path1"
+       style="color:#fcfcfc;fill:url(#linearGradient1)"
+       d="M 11,3 C 7.1340068,3 4,6.1340068 4,10 v 4 h 3 v -4 c 0,-2.209139 1.790861,-4 4,-4 2.209139,0 4,1.790861 4,4 v 4 h 3 V 10 C 18,6.1340068 14.865993,3 11,3 Z M 4,15 v 2.599609 A 0.4,0.4 0 0 0 4.4003906,18 H 6.5996094 A 0.4,0.4 0 0 0 7,17.599609 V 15 Z" />
+    <path
+       style="color:#3daee9;fill:url(#linearGradient2);fill-opacity:1;stroke:none"
+       d="m 14,15.4 v 3.2 a 0.4,0.4 45 0 0 0.4,0.4 h 4.2 A 0.4,0.4 135 0 0 19,18.6 V 15.4 A 0.4,0.4 45 0 0 18.6,15 H 14.4 A 0.4,0.4 135 0 0 14,15.4 Z m 1.2,0.6 h 2.6 a 0.2,0.2 45 0 1 0.2,0.2 v 1.6 A 0.2,0.2 135 0 1 17.8,18 H 15.2 A 0.2,0.2 45 0 1 15,17.8 V 16.2 A 0.2,0.2 135 0 1 15.2,16 Z"
+       class="ColorScheme-Accent"
+       id="path2"
+       inkscape:path-effect="#path-effect300"
+       inkscape:original-d="m 14,15 v 4 h 5 v -4 z m 1,1 h 3 v 2 h -3 z" />
+  </g>
+</svg>

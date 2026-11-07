@@ -14,8 +14,9 @@ set -euo pipefail
 #     or-beautyline, sync those two copies, re-apply our Plasma fixes to
 #     al-*, validate, record versions in upstream.lock + sources.md, and
 #     after a y/N prompt commit and push to GitHub via up.sh.
-#   - Garuda's BeautyLine fork is fetched for a report only: it is never
-#     merged (Erik's decision, 2026-11-07).
+#   - Garuda's BeautyLine fork: only the icon names no neo-candy layer has
+#     go into the hidden theme or-beautyline-garuda (Erik, 2026-11-07), so
+#     the ISO needs neither the beautyline nor the candy-icons-git package.
 #   - ./update-upstream.sh --check  only reports, changes nothing.
 #
 #   Why: the sync used to be done by hand every six months; one script
@@ -175,7 +176,7 @@ fetch_beautyline() {
 }
 
 report_garuda() {
-    log_section "Garuda BeautyLine fork — report only, never merged"
+    log_section "Garuda BeautyLine fork — only names neo-candy lacks are taken"
     git clone -q --depth 1 "${GARUDA_GIT}" "${WORK}/garuda"
     git -C "${WORK}/garuda" fetch -q --depth 1 --tags || true
     NEW_GARUDA_COMMIT="$(git -C "${WORK}/garuda" rev-parse --short HEAD)"
@@ -199,6 +200,11 @@ sync_trees() {
         done
     fi
     echo "  done"
+}
+
+build_garuda_extras() {
+    log_section "or-beautyline-garuda — Garuda icons no neo-candy layer has"
+    python3 -I "${SCRIPT_DIR}/tools/garuda_extras.py" "${WORK}/garuda" "${ICONS}"
 }
 
 apply_fixes() {
@@ -251,9 +257,11 @@ synced by \`update-upstream.sh\`. Our own work lives in the \`al-*\` themes.
 | Candy icons | https://github.com/EliverLara/candy-icons (also https://www.pling.com/p/1305251/) | master \`${NEW_CANDY_COMMIT}\` | ${NEW_CANDY_DATE} |
 | BeautyLine | https://www.pling.com/p/1425426/ (original by sajjad606) | ${NEW_BL_VERSION} | ${NEW_BL_CHANGED%%T*} |
 
-Not merged, checked for information: Garuda's BeautyLine fork
+Extras: Garuda's BeautyLine fork
 https://gitlab.com/garuda-linux/themes-and-settings/artwork/beautyline (${NEW_GARUDA_TAG} \`${NEW_GARUDA_COMMIT}\`).
-It reaches users only through \`Inherits=BeautyLine\` when the \`beautyline\` package is installed.
+Only the icon names none of the four layers above has are copied into the hidden theme
+\`usr/share/icons/or-beautyline-garuda\` (rebuilt on every run). Our own icons are never replaced.
+The \`beautyline\` and \`candy-icons-git\` packages are not needed; hq keeps them installed as a reference.
 
 Last upstream check: ${STAMP}
 EOF
@@ -306,6 +314,7 @@ main() {
         return
     fi
     sync_trees
+    build_garuda_extras
     apply_fixes
     validate
     write_records

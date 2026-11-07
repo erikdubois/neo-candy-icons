@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333333 4.2333333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="node-​type-​auto-​smooth.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="53.0625"
+     inkscape:cx="7.9905771"
+     inkscape:cy="8"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="paint0_linear_651_140"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196"
+       gradientUnits="userSpaceOnUse"
+       inkscape:label="Beautyline_yellow_gradient"
+       spreadMethod="pad">
+      <stop
+         stop-color="#FE0844"
+         id="stop4012" />
+      <stop
+         offset="1"
+         stop-color="#FEB302"
+         id="stop4014" />
+    </linearGradient>
+    <linearGradient
+       id="paint0_linear_451_2933"
+       x1="2.75"
+       y1="10.3125"
+       x2="18.371799"
+       y2="8.5861902"
+       gradientUnits="userSpaceOnUse"
+       inkscape:label="Beautyline_purple_gradient"
+       inkscape:swatch="gradient">
+      <stop
+         stop-color="#8D01A2"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#FF00D2"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint0_linear_651_140"
+       id="linearGradient228"
+       gradientUnits="userSpaceOnUse"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196"
+       spreadMethod="pad" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint0_linear_451_2933"
+       id="linearGradient229"
+       gradientUnits="userSpaceOnUse"
+       x1="2.75"
+       y1="10.3125"
+       x2="18.371799"
+       y2="8.5861902" />
+  </defs>
+  <g
+     id="g1"
+     description="node-​type-​auto-​smooth"
+     transform="matrix(0.18039773,0,0,0.18039773,0.13229143,0.26819079)">
+    <path
+       style="color:#fcfcfc;fill:url(#linearGradient228);fill-opacity:1;stroke:none"
+       d="M 1.0038222,2.3999766 C 1.1314249,9.3500314 4.4356394,15.282149 9,16.679688 V 15.636719 C 4.991905,14.215676 2.123416,8.7583725 2.0038781,2.3999782 1.9997257,2.179105 1.8209139,2 1.6,2 H 1.4 C 1.1790861,2 0.99976697,2.1791028 1.0038222,2.3999766 Z M 19.99605,2.399975 C 19.875398,8.7568743 17.00718,14.212095 13,15.632812 v 1.0625 C 17.568194,15.296594 20.873585,9.356029 20.996456,2.3999723 21.000357,2.1790995 20.820914,2 20.6,2 H 20.4 C 20.179086,2 20.000242,2.1791039 19.99605,2.399975 Z M 1,15.4 v 2.2 A 0.4,0.4 45 0 0 1.4,18 H 3.6 A 0.4,0.4 135 0 0 4,17.6 V 17 H 4.6 A 0.4,0.4 135 0 0 5,16.6 V 16.4 A 0.4,0.4 45 0 0 4.6,16 H 4 V 15.4 A 0.4,0.4 45 0 0 3.6,15 H 1.4 A 0.4,0.4 135 0 0 1,15.4 Z m 17,0 V 16 H 17.4 A 0.4,0.4 135 0 0 17,16.4 v 0.2 A 0.4,0.4 45 0 0 17.4,17 H 18 v 0.6 a 0.4,0.4 45 0 0 0.4,0.4 h 2.2 A 0.4,0.4 135 0 0 21,17.6 V 15.4 A 0.4,0.4 45 0 0 20.6,15 H 18.4 A 0.4,0.4 135 0 0 18,15.4 Z M 2.2,16 H 2.8 A 0.2,0.2 45 0 1 3,16.2 l 0,0.6 A 0.2,0.2 135 0 1 2.8,17 H 2.2 A 0.2,0.2 45 0 1 2,16.8 V 16.2 A 0.2,0.2 135 0 1 2.2,16 Z M 6,16.4 v 0.2 A 0.4,0.4 45 0 0 6.4,17 H 6.6 A 0.4,0.4 135 0 0 7,16.6 V 16.4 A 0.4,0.4 45 0 0 6.6,16 H 6.4 A 0.4,0.4 135 0 0 6,16.4 Z m 9,0 v 0.2 a 0.4,0.4 45 0 0 0.4,0.4 h 0.2 A 0.4,0.4 135 0 0 16,16.6 V 16.4 A 0.4,0.4 45 0 0 15.6,16 H 15.4 A 0.4,0.4 135 0 0 15,16.4 Z M 19.2,16 h 0.6 a 0.2,0.2 45 0 1 0.2,0.2 v 0.6 A 0.2,0.2 135 0 1 19.8,17 H 19.2 A 0.2,0.2 45 0 1 19,16.8 V 16.2 A 0.2,0.2 135 0 1 19.2,16 Z"
+       class="ColorScheme-Text"
+       id="path1"
+       inkscape:path-effect="#path-effect89"
+       transform="matrix(1.1,0,0,1.1,-1.1,-1)" />
+    <path
+       style="color:#3daee9;fill:url(#linearGradient229);fill-opacity:1;stroke:none"
+       d="M 11,14 A 2.5,2.5 0 0 0 8.5,16.5 2.5,2.5 0 0 0 11,19 2.5,2.5 0 0 0 13.5,16.5 2.5,2.5 0 0 0 11,14 Z m 0,1 A 1.5,1.5 0 0 1 12.5,16.5 1.5,1.5 0 0 1 11,18 1.5,1.5 0 0 1 9.5,16.5 1.5,1.5 0 0 1 11,15 Z"
+       class="ColorScheme-Accent"
+       id="path2" />
+  </g>
+</svg>

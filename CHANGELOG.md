@@ -5,7 +5,7 @@
 ### What Changed
 
 - New `update-upstream.sh` does the 6-monthly upstream check in one run. It fetches Candy icons (GitHub master) and BeautyLine (Pling, the original by sajjad606), compares them with `or-candy-icons` / `or-beautyline`, syncs those copies, re-applies our fixes, validates, records the versions, and pushes to GitHub after a y/N prompt. `--check` only reports.
-- Garuda's BeautyLine fork is fetched for a report only and is never merged. It has diverged from the original and drops 430 icons we use. Users with the `beautyline` package still get its icons through `Inherits=BeautyLine`.
+- Garuda's BeautyLine fork: neo-candy now carries the 522 icon names only that fork has, in a new hidden theme `or-beautyline-garuda`. With that, and the exact Candy copy it already had, neo-candy no longer needs the `beautyline` and `candy-icons-git` packages. Those two showed up as extra themes in XFCE's Appearance list. Our own icons are never replaced. Every one of 14,087 icon names still resolves to a byte-identical file.
 - Check result today: BeautyLine unchanged (Pling V2.4, last changed 2024-08-09); Candy has 25 new app/preferences icons.
 - `neo-candy-icons` inherited `candyicons`, a theme that does not exist, so the installed Candy theme was never used as a fallback. It now inherits `candy-icons`.
 - Plasma: the white and grey status icons in the tray (network, Bluetooth and the like) now follow the colour scheme. Before, they vanished on a light Plasma panel. XFCE and other GTK desktops show them exactly as before (checked pixel by pixel).
@@ -46,6 +46,8 @@
 - New aliases `audio-volume-{high,medium,low,muted,high-warning,high-danger}-symbolic` in `al-beautyline/status/{16,22}` point to neo-candy's own speaker files. XFCE's sound plugin asks for these names, which before only existed in `or-candy-icons`. GTK flattens `-symbolic` icons to the panel's text colour, so XFCE draws them white; Plasma keeps the candy.
 - `status/22/bluetooth.svg` is now a symlink to `../../apps/scalable/bluetooth.svg`. GTK preferred the mono `status/22` copy at 48 px (closest size), which is why the Settings tile was flat.
 - `actions/scalable/insert-link.svg` is drawn new: one stroked path, viewBox 48, width 4, round caps, gradient `#5570FF → #4DD3FF` like `link` / `edit-copy`. The old white glyph is kept as the real `insert-link-symbolic.svg`, which used to be a link to it. Aliases that point to `insert-link` (`gnumeric-link-add`, `itmages-copy-link`, `document-open-remote`, `rabbitvcs-checkmods`) get the candy one too.
+- `tools/garuda_extras.py` (run by `update-upstream.sh` right after the or-* sync) rebuilds `or-beautyline-garuda` from scratch on every run. It takes the Garuda names missing from al-beautyline, or-beautyline, al-candy-icons and or-candy-icons: 378 files plus 185 links. A link stays a link when its target comes along. Folder sections come from Garuda's own index; Garuda declares `[actions/scalable]` twice, so the first (Actions) is used.
+- `neo-candy-icons/index.theme`: `Inherits=` now reads `…,or-beautyline,or-beautyline-garuda,al-candy-icons,or-candy-icons,breeze-dark,breeze`. Before, it listed `BeautyLine` and `candy-icons`. The PKGBUILD drops `optdepends=('beautyline' 'candy-icons')`.
 - Fake-link repair: an `.svg` of at most 200 bytes whose whole content is an existing sibling's file name is replaced by a relative symlink to it (100 in `al-*`, including `kdeconnect-tray-symbolic`).
 - A `PROTECT` name pattern skips every session and power icon (shutdown, reboot, suspend, hibernate, sleep, log out, exit, quit, switch user, session, xfsm, lock screen, padlock lock/unlock), symlink or real file. The session icons themselves live in `apps/` and `actions/`, which the tool never touches.
 - QtSvg fixes:
@@ -70,6 +72,8 @@
   - `archlinux-logout.svg` → `system-shutdown.svg`
 - tools/compare_trees.py, tools/pling_latest.py, tools/qt_check.py, tools/neo_candy_plasma.py (new)
 - usr/share/icons/neo-candy-icons/index.theme
+- usr/share/icons/or-beautyline-garuda/ (new, generated), tools/garuda_extras.py (new)
+- ~/KIRO-PKG-BUILD-ICONS/neo-candy-icons-git/PKGBUILD (optdepends removed)
 
 ## 2026.10.01 — Shell-script and empty-file icons match the theme
 

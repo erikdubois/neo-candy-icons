@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333333 4.2333333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="snap-​text-​baseline.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="49.293374"
+     inkscape:cx="7.4046463"
+     inkscape:cy="7.65823"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient174"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196"
+       gradientUnits="userSpaceOnUse"
+       inkscape:swatch="gradient"
+       inkscape:label="Beautyline_yellow_gradient">
+      <stop
+         stop-color="#FE0844"
+         id="stop172"
+         style="stop-color:#fe0844;stop-opacity:1" />
+      <stop
+         offset="1"
+         stop-color="#FEB302"
+         id="stop173" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint0_linear_451_2933"
+       id="linearGradient391-5"
+       gradientUnits="userSpaceOnUse"
+       x1="2.75"
+       y1="10.3125"
+       x2="18.371799"
+       y2="8.5861902"
+       gradientTransform="translate(0.18441882,-0.99467158)" />
+    <linearGradient
+       id="paint0_linear_451_2933"
+       x1="2.75"
+       y1="10.3125"
+       x2="18.371799"
+       y2="8.5861902"
+       gradientUnits="userSpaceOnUse"
+       inkscape:label="Beautyline_purple_gradient"
+       inkscape:swatch="gradient">
+      <stop
+         stop-color="#8D01A2"
+         id="stop1" />
+      <stop
+         offset="1"
+         stop-color="#FF00D2"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient174"
+       id="linearGradient1"
+       gradientUnits="userSpaceOnUse"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196" />
+  </defs>
+  <g
+     id="g1"
+     description="snap-​text-​baseline"
+     transform="matrix(0.24804688,0,0,0.24804688,-0.3638038,-0.6118465)">
+    <path
+       style="color:#fcfcfc;fill:url(#linearGradient1);fill-opacity:1;stroke:none"
+       d="M 9.7795393,3.3780731 6.5957031,12.59375 6.4726562,13 5.3671875,16 H 6 v 1 H 6.6582031 L 8.1456567,12.938107 A 0.57245547,0.57245547 145.05629 0 1 8.6832031,12.5625 l 4.6335939,0 a 0.57245547,0.57245547 34.943706 0 1 0.537546,0.375607 L 15.341797,17 H 17 L 15.527344,13 15.404297,12.59375 12.220461,3.3780731 A 0.5613908,0.5613908 35.470485 0 0 11.689844,3 H 10.310156 A 0.56139081,0.56139081 144.52952 0 0 9.7795393,3.3780731 Z m 1.3010757,1.7485732 1.984717,5.7763107 a 0.28551469,0.28551469 125.51874 0 1 -0.27002,0.378293 l -3.5906245,0 A 0.28418862,0.28418862 54.607289 0 1 8.9363303,10.903533 L 10.949804,5.1263585 a 0.06921144,0.06921144 0.12603157 0 1 0.130811,2.878e-4 z"
+       class="ColorScheme-Text"
+       id="path1"
+       sodipodi:nodetypes="ccccccccccccccccccc"
+       inkscape:path-effect="#path-effect413" />
+    <path
+       d="m 3.4012157,15.000303 c -0.2173351,0.0024 -0.4006069,0.179172 -0.4003906,0.400391 v 3.199218 c -0.015149,0.211086 0.1805799,0.401563 0.4003906,0.400391 h 3.1992186 c 0.2209989,6.7e-5 0.400607,-0.179172 0.400391,-0.400391 v -3.199218 c 2.06e-4,-0.221226 -0.1919484,-0.409277 -0.400391,-0.400391 z m 0.7988286,1 h 1.601562 c 0.1021331,-0.0048 0.2007699,0.09071 0.199219,0.199219 v 1.601562 c -0.00395,0.107456 -0.093564,0.195946 -0.199219,0.199219 h -1.601562 c -0.1065174,0.0018 -0.2062056,-0.0944 -0.199219,-0.199219 v -1.601562 c 0.00395,-0.107458 0.094618,-0.19523 0.199219,-0.199219 z"
+       style="color:#3daee9;fill:url(#linearGradient391-5)"
+       id="path2"
+       sodipodi:nodetypes="cccccccccccccccccc" />
+  </g>
+</svg>

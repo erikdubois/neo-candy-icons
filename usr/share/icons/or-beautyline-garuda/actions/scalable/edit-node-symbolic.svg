@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333333 4.2333333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="edit-node.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="53.0625"
+     inkscape:cx="7.9905771"
+     inkscape:cy="7.9623086"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="paint0_linear_651_140"
+       x1="3.5374999"
+       y1="13.3472"
+       x2="16.162201"
+       y2="2.33196"
+       gradientUnits="userSpaceOnUse"
+       inkscape:label="Beautyline_yellow_gradient"
+       spreadMethod="pad">
+      <stop
+         stop-color="#FE0844"
+         id="stop4012" />
+      <stop
+         offset="1"
+         stop-color="#FEB302"
+         id="stop4014" />
+    </linearGradient>
+    <linearGradient
+       id="paint0_linear_451_2933-7"
+       x1="2.75"
+       y1="10.3125"
+       x2="18.371799"
+       y2="8.5861902"
+       gradientUnits="userSpaceOnUse"
+       inkscape:label="Beautyline_purple_gradient"
+       inkscape:swatch="gradient">
+      <stop
+         stop-color="#8D01A2"
+         id="stop1-5" />
+      <stop
+         offset="1"
+         stop-color="#FF00D2"
+         id="stop2-3" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint0_linear_451_2933-7"
+       id="linearGradient212"
+       gradientUnits="userSpaceOnUse"
+       x1="-31"
+       y1="111.5"
+       x2="-27"
+       y2="111.5"
+       gradientTransform="translate(0,-4)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#paint0_linear_651_140"
+       id="linearGradient213"
+       gradientUnits="userSpaceOnUse"
+       x1="-15"
+       y1="111"
+       x2="-3"
+       y2="111" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect212"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.4,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 | F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 | F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1 | F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1 @ F,0,0,1,0,0.2,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     id="g211"
+     transform="matrix(0.24804688,0,0,0.24804688,8.8139323,-24.920442)"
+     description="edit-node">
+    <path
+       style="color:#fcfcfc;fill:url(#linearGradient212);fill-opacity:1;stroke:none"
+       d="m -32,104 v 7 l 1.450893,-0.71429 1.75,1.71429 -0.183036,-2.39955 L -27.428571,109 Z"
+       class="ColorScheme-Text"
+       id="path210"
+       description="edit-​node"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:transform-center-x="-2.2857145"
+       inkscape:transform-center-y="4" />
+    <path
+       style="color:#fcfcfc;fill:url(#linearGradient213);stroke:none"
+       d="m -13.5,105 c -0.828427,0 -1.5,0.67157 -1.5,1.5 0,0.65584 0.413588,1.20241 1,1.40625 V 108 v 1 8.8 a 0.2,0.2 135 0 1 -0.2,0.2 h -0.4 a 0.4,0.4 135 0 0 -0.4,0.4 v 2.2 a 0.4,0.4 45 0 0 0.4,0.4 h 2.2 a 0.4,0.4 135 0 0 0.4,-0.4 v -2.2 a 0.4,0.4 45 0 0 -0.4,-0.4 h -0.4 a 0.2,0.2 45 0 1 -0.2,-0.2 v -8.8 -1 -0.0937 c 0.432093,-0.15025 0.756052,-0.47421 0.90625,-0.9063 H -12 h 1 8.8 a 0.2,0.2 45 0 1 0.2,0.2 v 0.4 a 0.4,0.4 45 0 0 0.4,0.4 H -1 v 2.6 a 0.4,0.4 45 0 0 0.4,0.4 h 0.2 A 0.4,0.4 135 0 0 0,110.6 V 108 H 0.6 A 0.4,0.4 135 0 0 1,107.6 v -2.2 A 0.4,0.4 45 0 0 0.6,105 h -2.2 a 0.4,0.4 135 0 0 -0.4,0.4 v 0.4 a 0.2,0.2 135 0 1 -0.2,0.2 h -8.8 -1 -0.09375 c -0.20384,-0.58641 -0.750412,-1 -1.40625,-1 z m 0,1 c 0.276142,0 0.5,0.22386 0.5,0.5 0,0.27614 -0.223858,0.5 -0.5,0.5 -0.276142,0 -0.5,-0.22386 -0.5,-0.5 0,-0.27614 0.223858,-0.5 0.5,-0.5 z m 12.7,0 0.6,0 a 0.2,0.2 45 0 1 0.2,0.2 v 0.6 a 0.2,0.2 135 0 1 -0.2,0.2 l -0.6,0 A 0.2,0.2 45 0 1 -1,106.8 v -0.6 a 0.2,0.2 135 0 1 0.2,-0.2 z m -13,13 h 0.6 a 0.2,0.2 45 0 1 0.2,0.2 v 0.6 a 0.2,0.2 135 0 1 -0.2,0.2 h -0.6 a 0.2,0.2 45 0 1 -0.2,-0.2 l 0,-0.6 a 0.2,0.2 135 0 1 0.2,-0.2 z"
+       class="ColorScheme-Text"
+       id="path211"
+       descriptiojn="format-​add-​node"
+       sodipodi:nodetypes="ssccccccccccccccccccccccccccccsssssscccccccccc"
+       inkscape:original-d="m -13.5,105 c -0.828427,0 -1.5,0.67157 -1.5,1.5 0,0.65584 0.413588,1.20241 1,1.40625 V 108 v 1 9 h -1 v 3 h 3 v -3 h -1 v -9 -1 -0.0937 c 0.432093,-0.15025 0.756052,-0.47421 0.90625,-0.9063 H -12 h 1 9 v 1 h 1 v 3 h 1 v -3 h 1 v -3 h -3 v 1 h -9 -1 -0.09375 c -0.20384,-0.58641 -0.750412,-1 -1.40625,-1 z m 0,1 c 0.276142,0 0.5,0.22386 0.5,0.5 0,0.27614 -0.223858,0.5 -0.5,0.5 -0.276142,0 -0.5,-0.22386 -0.5,-0.5 0,-0.27614 0.223858,-0.5 0.5,-0.5 z m 12.5,0 h 1 v 1 h -1 z m -13,13 h 1 v 1 h -1 z"
+       inkscape:path-effect="#path-effect212"
+       transform="translate(-20,-4)" />
+  </g>
+</svg>
