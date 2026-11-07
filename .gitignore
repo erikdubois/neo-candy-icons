@@ -1,2 +1,4 @@
 .codex/
 .claude/
+versions/
+.ruff_cache/

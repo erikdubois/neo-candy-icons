@@ -98,6 +98,17 @@ After installation, you can activate the Neo Candy Icon Theme through your deskt
 
 Use lxappearance to change your icon theme.
 
+## Maintenance
+
+The theme builds on two upstream sets. Their copies live in `or-candy-icons` and `or-beautyline`; our own work lives in the `al-*` themes. Every six months, run:
+
+```bash
+./update-upstream.sh --check   # report what changed upstream, change nothing
+./update-upstream.sh           # sync, re-apply our fixes, validate, then ask before pushing
+```
+
+Versions and dates are recorded in [sources.md](sources.md) and `upstream.lock`.
+
 ## Contributing
 
 We welcome contributions from the community! Whether you want to suggest new icons, report bugs, or improve existing ones, your input is valuable.

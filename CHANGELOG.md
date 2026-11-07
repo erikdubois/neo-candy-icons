@@ -1,5 +1,66 @@
 # Changelog
 
+## 2026.11.07 — Upstream check script, Candy fallback fixed
+
+### What Changed
+
+- New `update-upstream.sh` does the 6-monthly upstream check in one run. It fetches Candy icons (GitHub master) and BeautyLine (Pling, the original by sajjad606), compares them with `or-candy-icons` / `or-beautyline`, syncs those copies, re-applies our fixes, validates, records the versions, and pushes to GitHub after a y/N prompt. `--check` only reports.
+- Garuda's BeautyLine fork is fetched for a report only and is never merged. It has diverged from the original and drops 430 icons we use. Users with the `beautyline` package still get its icons through `Inherits=BeautyLine`.
+- Check result today: BeautyLine unchanged (Pling V2.4, last changed 2024-08-09); Candy has 25 new app/preferences icons.
+- `neo-candy-icons` inherited `candyicons`, a theme that does not exist, so the installed Candy theme was never used as a fallback. It now inherits `candy-icons`.
+- Plasma: the white and grey status icons in the tray (network, Bluetooth and the like) now follow the colour scheme. Before, they vanished on a light Plasma panel. XFCE and other GTK desktops show them exactly as before (checked pixel by pixel).
+- Sound and Variety tray icons are now candy-coloured (blue to cyan), like their colourful tray neighbours, on every desktop.
+- KDE Connect's tray icon was blank. It and 99 other icons were symlinks saved as text files, which show as empty icons. They are real symlinks again.
+- Plasma: two icons drawn wrong by Qt are fixed: the executable-file icon (stray blue frame in Dolphin) and the Chatty icon (grey box).
+- Synced the 25 new Candy icons.
+- Quit, lock, hibernate, log out and the rest of the session/power icons are kept exactly as drawn.
+- Four apps that showed a Breeze or hicolor icon in the Plasma menu and System Settings now use a neo-candy icon:
+  - Backups (Kup) → the circular-arrow backup icon
+  - Journald Browser → the log-viewer icon
+  - Resources → the system-monitor icon
+  - tuned-gui → the CPU-chip icon
+
+### Technical Details
+
+- Helpers in `tools/`:
+  - `compare_trees.py` gives a per-context diff of new / changed / only-ours.
+  - `pling_latest.py` asks the Pling OCS API for the newest file and a fresh download link (the token is IP-bound and short-lived).
+  - `qt_check.py` flags SVGs that QtSvg (Plasma) draws differently from rsvg (GTK).
+  - `neo_candy_plasma.py` holds the Plasma fixes for `al-*`.
+- The sync uses `rsync --delete`. It keeps our `index.theme` files and `or-candy-icons/places/16/folder-library.svg`, skips `.github`, `.directory`, names with spaces and `(copy N)` duplicates, and only syncs the BeautyLine contexts we vendor.
+- `upstream.lock` records the synced commit/version; `sources.md` is regenerated from it. Each run leaves its report in `versions/<date>_<HHMM>-upstream/` (git-ignored).
+- Fixes only ever go into `al-*`, because `or-*` is overwritten by every sync.
+- Plasma hook (ported from Surpa's recolour step): 1,641 mono SVGs in `al-beautyline/status/{16,22}` and `panel/{16,22}` get `fill="currentColor"` + `class="ColorScheme-Text"` and a `current-color-scheme` style.
+  - The style's colour is the icon's own original colour, so GTK, which ignores the hook, draws them unchanged.
+  - Accent colours stay as drawn (red mute marks, orange battery levels).
+  - Skipped: gradients, icons with more than one neutral colour (white on a light-grey box would lose its detail), and white lettering on a coloured badge (152 colourful, 14 two-tone, 22 badges left as drawn).
+  - Leftover Inkscape `color` values are stripped from hooked icons. Children inherit `currentColor` but resolve it against their own `color`, which broke `renamed-vlc`.
+  - Verified: rsvg renders of all hooked icons are pixel-identical before and after at 16, 24 and 48 px.
+- Candy step (runs before the hook): real files named `audio-volume-*` / `variety-indicator*` in `al-beautyline/status`, `panel` and `apps/scalable` get a diagonal `nc-candy` gradient `#0072FF → #00C6FF` (Cochiti Lake) in place of their neutral or theme-hooked paint. Accents stay. 21 files; skipped when `nc-candy` is already present. Variety needs the `apps/scalable` copy too, because `neo-candy-icons/index.theme` lists no `panel/22`, so at 22 px Plasma takes the scalable app copy.
+- Fake-link repair: an `.svg` of at most 200 bytes whose whole content is an existing sibling's file name is replaced by a relative symlink to it (100 in `al-*`, including `kdeconnect-tray-symbolic`).
+- A `PROTECT` name pattern skips every session and power icon (shutdown, reboot, suspend, hibernate, sleep, log out, exit, quit, switch user, session, xfsm, lock screen, padlock lock/unlock), symlink or real file. The session icons themselves live in `apps/` and `actions/`, which the tool never touches.
+- QtSvg fixes:
+  - `application-executable` was raster art behind a `<clipPath>`, which Qt ignores. It is flattened into one embedded 256 px rsvg render.
+  - `purism-chatty` lost its Figma drop-shadow `filter` and full-canvas `clip-path`.
+  - The other 491 clipPath/filter SVGs render the same in Qt and rsvg.
+
+### Files Modified
+
+- update-upstream.sh (new)
+- upstream.lock (new), sources.md (regenerated)
+- README.md (Maintenance section), CLAUDE.md (or-* rule, protected session icons, no cd into the tree)
+- .gitignore (versions/, .ruff_cache/)
+- usr/share/icons/al-beautyline/status/{16,22}/*, panel/{16,22}/* (Plasma hook)
+- usr/share/icons/al-beautyline/mimetypes/scalable/application-executable.svg, apps/scalable/purism-chatty.svg
+- usr/share/icons/or-candy-icons/apps/scalable/* (23 new), preferences/scalable/* (2 new)
+- usr/share/icons/al-beautyline/apps/scalable/ new relative symlinks:
+  - `kup.svg`, `kup-symbolic.svg`, `org.kde.kup.svg` → `preferences-system-backup.svg`
+  - `org.kde.kjournaldbrowser.svg` → `utilities-log-viewer.svg`
+  - `org.gnome.Resources.svg` → `utilities-system-monitor.svg`
+  - `tuned.svg` → `indicator-cpufreq.svg`
+- tools/compare_trees.py, tools/pling_latest.py, tools/qt_check.py, tools/neo_candy_plasma.py (new)
+- usr/share/icons/neo-candy-icons/index.theme
+
 ## 2026.10.01 — Shell-script and empty-file icons match the theme
 
 ### What Changed
