@@ -17,11 +17,12 @@
 - Plasma: two icons drawn wrong by Qt are fixed: the executable-file icon (stray blue frame in Dolphin) and the Chatty icon (grey box).
 - Synced the 25 new Candy icons.
 - Quit, lock, hibernate, log out and the rest of the session/power icons are kept exactly as drawn.
-- Four apps that showed a Breeze or hicolor icon in the Plasma menu and System Settings now use a neo-candy icon:
+- Five apps that showed a Breeze or hicolor icon in the Plasma menu and System Settings now use a neo-candy icon:
   - Backups (Kup) → the circular-arrow backup icon
   - Journald Browser → the log-viewer icon
   - Resources → the system-monitor icon
   - tuned-gui → the CPU-chip icon
+  - ArchLinux Logout (Settings) → the orange power-ring icon (it showed the archlinux-logout package's own Surfn-style icon from hicolor)
 
 ### Technical Details
 
@@ -66,6 +67,7 @@
   - `org.kde.kjournaldbrowser.svg` → `utilities-log-viewer.svg`
   - `org.gnome.Resources.svg` → `utilities-system-monitor.svg`
   - `tuned.svg` → `indicator-cpufreq.svg`
+  - `archlinux-logout.svg` → `system-shutdown.svg`
 - tools/compare_trees.py, tools/pling_latest.py, tools/qt_check.py, tools/neo_candy_plasma.py (new)
 - usr/share/icons/neo-candy-icons/index.theme
 
